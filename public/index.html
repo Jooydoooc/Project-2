@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadMaster - Login</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="login-page">
+
+    <div class="login-container">
+        <div class="login-card">
+            
+            <div class="logo-section">
+                <div class="logo">
+                    <i class="fas fa-book-reader"></i>
+                    <h1>ReadMaster</h1>
+                </div>
+                <p class="tagline">Improve Your Reading Skills One Page at a Time</p>
+            </div>
+
+            <form id="loginForm" class="login-form">
+                <h2>Student Login</h2>
+
+                <div class="form-group">
+                    <label><i class="fas fa-user"></i> First Name</label>
+                    <input type="text" id="name" placeholder="Enter your first name" required>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fas fa-users"></i> Last Name</label>
+                    <input type="text" id="surname" placeholder="Enter your last name" required>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fas fa-layer-group"></i> Group</label>
+                    <select id="group" required>
+                        <option value="">Select your group</option>
+                        <option value="A">Group A</option>
+                        <option value="B">Group B</option>
+                        <option value="C">Group C</option>
+                        <option value="D">Group D</option>
+                    </select>
+                </div>
+
+                <button class="btn-login" type="submit">
+                    <i class="fas fa-sign-in-alt"></i> Enter Platform
+                </button>
+
+                <div class="login-info">
+                    <i class="fas fa-info-circle"></i>
+                    Your progress will be saved automatically
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+<script src="/src/script.js"></script>
+</body>
+</html>
