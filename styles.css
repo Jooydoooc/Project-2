@@ -207,4 +207,219 @@ html[data-theme="minimal"] {
 /* USER INFO */
 .nav-right {
     text-align: right;
-    font-s
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+/* ---------------------------------------------------------
+   SETTINGS MENU
+--------------------------------------------------------- */
+
+.settings-container {
+    position: relative;
+}
+
+.settings-btn {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: var(--primary);
+}
+
+.settings-menu {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 230px;
+    background: var(--bg-card);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 15px;
+    display: none;
+}
+
+.settings-menu.show {
+    display: block;
+}
+
+.settings-menu h4 {
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.settings-section span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.theme-options {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.theme-btn {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    background: var(--bg-light);
+    cursor: pointer;
+    transition: 0.2s ease;
+    color: var(--text);
+}
+
+.theme-btn:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* ---------------------------------------------------------
+   BOOK CARDS
+--------------------------------------------------------- */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+}
+
+.books-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--white);
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    background: var(--bg-card);
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ---------------------------------------------------------
+   UNIT PAGE
+--------------------------------------------------------- */
+
+.unit-header {
+    background: var(--primary);
+    padding: 35px;
+    color: white;
+    border-radius: 14px;
+    margin-bottom: 25px;
+}
+
+.reading-controls {
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    box-shadow: var(--shadow);
+}
+
+.control-btn {
+    padding: 12px 18px;
+    border-radius: 10px;
+    background: var(--bg-light);
+    border: 2px solid #e5e7eb;
+    color: var(--text);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.control-btn.active {
+    background: var(--primary);
+    color: white;
+}
+
+/* Text Section */
+.text-section {
+    background: var(--bg-card);
+    padding: 25px;
+    border-radius: 12px;
+    margin: 25px 0;
+    line-height: 1.7;
+}
+
+/* Vocabulary Highlight */
+.vocab-word {
+    background: #e0f2fe;
+    padding: 2px 5px;
+    border-radius: 4px;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+/* Vocabulary Popup */
+.vocab-popup {
+    position: fixed;
+    inset: 0;
+    background: var(--bg-popup);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.vocab-popup.show {
+    display: flex;
+}
+
+.popup-content {
+    background: var(--bg-card);
+    padding: 25px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: var(--shadow);
+}
+
+/* Exercises */
+.exercise-card {
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+}
+
+.option {
+    padding: 12px;
+    background: var(--bg-light);
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.option.correct {
+    border-color: var(--success);
+    background: #dcfce7;
+}
+
+.option.incorrect {
+    border-color: var(--danger);
+    background: #fee2e2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .reading-controls {
+        flex-direction: column;
+    }
+}
