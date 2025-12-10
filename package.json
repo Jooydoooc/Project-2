@@ -1,0 +1,10 @@
+{
+  "name": "readmaster-platform",
+  "version": "1.0.0",
+  "description": "A lightweight reading platform for students",
+  "type": "module",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel --prod"
+  }
+}
