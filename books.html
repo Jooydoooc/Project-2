@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf - ReadMaster</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-container">
+
+        <div class="nav-left">
+            <a href="/index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+
+            <div class="logo">
+                <i class="fas fa-book-reader"></i>
+                <h1>ReadMaster</h1>
+            </div>
+        </div>
+
+        <!-- USER AREA -->
+        <div class="nav-right" id="userInfo"></div>
+
+        <!-- SETTINGS MENU -->
+        <div class="settings-container">
+            <button class="settings-btn" id="settingsBtn">
+                <i class="fas fa-cog"></i>
+            </button>
+
+            <div class="settings-menu" id="settingsMenu">
+                <h4>Settings</h4>
+
+                <div class="settings-section">
+                    <span>Theme</span>
+                    <div class="theme-options">
+                        <button class="theme-btn" data-theme="light">🌅 Light</button>
+                        <button class="theme-btn" data-theme="dark">🌙 Dark</button>
+                        <button class="theme-btn" data-theme="minimal">📄 Minimal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <div class="books-header">
+        <h2>Available Books</h2>
+        <p>Select a book to start reading</p>
+    </div>
+
+    <div id="booksGrid" class="books-grid">
+        <div class="loading">
+            <div class="spinner"></div>
+            <p>Loading books...</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="/src/script.js"></script>
+</body>
+</html>
