@@ -1,0 +1,12 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "public": "public",
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/books", "destination": "/books.html" },
+    { "source": "/unit", "destination": "/unit.html" },
+    { "source": "/books/*", "destination": "/books.html" },
+    { "source": "/unit/*", "destination": "/unit.html" }
+  ]
+}
