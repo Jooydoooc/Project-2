@@ -1,0 +1,82 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Thoughts and Notions",
+      "description": "A reading book focusing on practical stories and concepts.",
+      "status": "available",
+      "units": [
+        {
+          "id": "1.1",
+          "title": "The Zipper",
+          "text": "Everyone knows what a zipper is. It is found on many kinds of clothing—coats, pants, and skirts.\n\nThe zipper was invented by an American named Whitcomb Judson. He wanted to make it easier for people to fasten their shoes. His first zipper design did not work well, but it was the beginning of a great idea.\n\nLater, a Swedish-born engineer named Gideon Sundback improved the design. He made the zipper stronger and easier to use. Sundback's zipper became very successful and changed the clothing industry forever.",
+          
+          "vocabulary": [
+            {
+              "word": "invent",
+              "translation": "to create something new",
+              "definition": "to think of and create a new device or process",
+              "example": "Thomas Edison invented the light bulb."
+            },
+            {
+              "word": "design",
+              "translation": "a plan or drawing",
+              "definition": "a plan or blueprint for creating something",
+              "example": "The architect created a new design for the bridge."
+            },
+            {
+              "word": "industry",
+              "translation": "a group of businesses",
+              "definition": "economic activity related to processing raw materials and manufacturing goods",
+              "example": "The clothing industry is huge worldwide."
+            }
+          ],
+
+          "grammar": {
+            "theme": "Past Simple Tense",
+            "description": "We use the past simple to talk about finished actions in the past.",
+            "examples": [
+              "Whitcomb Judson invented the first zipper.",
+              "Sundback improved the zipper design.",
+              "The design became very successful."
+            ]
+          },
+
+          "exercises": [
+            {
+              "question": "Whitcomb Judson _____ the first zipper.",
+              "options": ["invent", "invented", "is inventing", "has invented"],
+              "correct": 1
+            },
+            {
+              "question": "Gideon Sundback _____ the zipper design.",
+              "options": ["improve", "improves", "improved", "improving"],
+              "correct": 2
+            },
+            {
+              "question": "The zipper _____ important in the clothing industry.",
+              "options": ["become", "became", "becomes", "becoming"],
+              "correct": 1
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": 2,
+      "title": "Reading Explorer",
+      "description": "An exciting series focused on global topics and real-world content.",
+      "status": "coming soon",
+      "units": []
+    },
+
+    {
+      "id": 3,
+      "title": "Basic Reading Power",
+      "description": "A foundational reading book for building essential skills.",
+      "status": "coming soon",
+      "units": []
+    }
+  ]
+}
